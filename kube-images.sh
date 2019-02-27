@@ -3,6 +3,15 @@ version=v1.13.3
 pauseVersion=3.1
 etcdVersion=3.2.24
 corednsVersion=1.2.6
+
+docker rmi k8s.gcr.io/kube-apiserver-amd64:$version
+docker rmi k8s.gcr.io/kube-controller-manager-amd64:$version
+docker rmi k8s.gcr.io/kube-scheduler-amd64:$version
+docker rmi k8s.gcr.io/kube-proxy-amd64:$version
+docker rmi k8s.gcr.io/pause:$pauseVersion
+docker rmi k8s.gcr.io/etcd-amd64:$etcdVersion
+docker rmi k8s.gcr.io/coredns:$corednsVersion
+
 docker pull mirrorgooglecontainers/kube-apiserver-amd64:$version &&
 docker pull mirrorgooglecontainers/kube-controller-manager-amd64:$version &&
 docker pull mirrorgooglecontainers/kube-scheduler-amd64:$version &&
