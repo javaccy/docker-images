@@ -13,12 +13,12 @@ docker rmi k8s.gcr.io/pause:$pauseVersion
 docker rmi k8s.gcr.io/etcd:$etcdVersion
 docker rmi k8s.gcr.io/coredns:$corednsVersion
 
-docker rmi mirrorsgooglecontainers/kube-apiserver-amd64:$version
-docker rmi mirrorsgooglecontainers/kube-controller-manager-amd64:$version
-docker rmi mirrorsgooglecontainers/kube-scheduler-amd64:$version
-docker rmi mirrorsgooglecontainers/kube-proxy-amd64:$version
-docker rmi mirrorsgooglecontainers/pause:$pauseVersion
-docker rmi mirrorsgooglecontainers/etcd-amd64:$etcdVersion
+docker rmi mirrorgooglecontainers/kube-apiserver-amd64:$version
+docker rmi mirrorgooglecontainers/kube-controller-manager-amd64:$version
+docker rmi mirrorgooglecontainers/kube-scheduler-amd64:$version
+docker rmi mirrorgooglecontainers/kube-proxy-amd64:$version
+docker rmi mirrorgooglecontainers/pause:$pauseVersion
+docker rmi mirrorgooglecontainers/etcd-amd64:$etcdVersion
 docker rmi coredns/coredns:$corednsVersion
 
 docker pull mirrorgooglecontainers/kube-apiserver-amd64:$version &&
