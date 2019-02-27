@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 version=v1.13.3
 pauseVersion=3.1
-etcdVersion=3.2.18
+etcdVersion=3.2.24
 corednsVersion=1.2.6
 docker pull mirrorgooglecontainers/kube-apiserver-amd64:$version &&
 docker pull mirrorgooglecontainers/kube-controller-manager-amd64:$version &&
