@@ -1,0 +1,4 @@
+sudo rm -rfv /etc/kubernetes
+sudo rm -rfv /usr/libexec/kubernetes
+sudo rm -rfv /var/lib/kubelet
+sudo rm -rfv /etc/kubernetes/manifests
